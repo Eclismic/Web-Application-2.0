@@ -160,6 +160,7 @@
     </Compile>
     <Compile Include="Models\KoppelingInitializer.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Software.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

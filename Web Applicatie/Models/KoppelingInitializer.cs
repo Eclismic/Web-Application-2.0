@@ -7,6 +7,6 @@ namespace Web_Applicatie.Models
 {
     public class KoppelingInitializer
     {
-        public int MyProperty { get; set; }
+        public Software Software { get; set; }
     }
 }
