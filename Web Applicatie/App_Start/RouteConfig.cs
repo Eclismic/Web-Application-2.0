@@ -13,6 +13,13 @@ namespace Web_Applicatie
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+
+
+            routes.MapRoute(
+                name: "Koppel",
+                url: "{controller}/{action}"
+                );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

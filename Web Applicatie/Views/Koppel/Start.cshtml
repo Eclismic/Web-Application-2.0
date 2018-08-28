@@ -1,0 +1,34 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@{
+	ViewBag.Title = "Koppelingen";
+}
+@using Web_Applicatie.Models
+
+<h2>Alle mogelijke koppelingen:</h2>
+<table>
+	<tr>
+		<th>
+			Software
+		</th>
+		<th>
+			Omschrijving
+		</th>
+	</tr>
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>
+				@item.Naam
+			</td>
+			<td>
+				@item.Description	
+			</td>
+		</tr>
+
+	}
+</table>
+
+
