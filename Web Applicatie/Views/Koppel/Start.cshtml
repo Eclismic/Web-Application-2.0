@@ -1,14 +1,12 @@
 ﻿@{
 	Layout = "~/Views/Shared/_Layout.cshtml";
-
-}
-@{
 	ViewBag.Title = "Koppelingen";
+
 }
 @using Web_Applicatie.Models
 
 <h2>Alle mogelijke koppelingen:</h2>
-<table>
+<table class=" table-bordered table-hover">
 	<tr>
 		<th>
 			Software
@@ -21,7 +19,7 @@
 	{
 		<tr>
 			<td>
-				@item.Naam
+				@Html.ActionLink((string)item.Naam, "Connectie", "Connectie")
 			</td>
 			<td>
 				@item.Description	
